@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light background for a fresh look */
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333; /* Darker color for contrast */
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+input {
+  padding: 10px; 
+  margin-right: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 250px; 
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px; /* Padding for button */
+  background-color: #28a745; /* Green background for positive action */
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Todo list styles */
+ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+/* List item styles */
+li {
+  padding: 5px 0; /* Space between list items */
+  border-bottom: 1px solid #ddd; /* Light border between items */
+}
+
+/* Animation styles for buttons */
+button {
+  position: relative; /* Needed for animation */
+  overflow: hidden; /* Hide overflow */
+}
+
+button:after {
+  content: '';
+  position: absolute; /* Absolute positioning for animation */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3); /* Light overlay */
+  transform: scale(0); /* Start scaled down */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+button:hover:after {
+  transform: scale(1); /* Scale up on hover */
+}
+
+/* src/components/AuthComponent.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center the card */
+}
+
+.auth-card {
+  background-color: white; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 300px; /* Fixed width */
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+}
+
+.auth-card input {
+  margin-bottom: 10px; /* Space between inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width inputs */
+}
+
+.auth-card button {
+  padding: 10px 15px;
+  background-color: #28a745; /* Button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width buttons */
+}
+
+.auth-card button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.toggle-container {
+  margin-top: 10px;
+}
+
+.toggle-container button {
+  background: none; /* Transparent background */
+  color: #007bff; /* Link color */
+  border: none;
+  cursor: pointer;
+  text-decoration: underline; /* Underlined text */
+}
+
+/* src/components/TodoList.css */
+
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.todo-button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  box-shadow: 0 0 10px #08b863, 0 0 20px #4bf082, 0 0 30px #1a8946; /* Red glow for delete */
+
+  background-color: #08b863;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+.todo-text {
+  flex-grow: 1; /* Allow the text to take available space */
+  margin-right: 10px; /* Add some space between text and buttons */
+}
+
+.todo-actions {
+  display: flex; /* Align buttons in a row */
+  gap: 5px; /* Optional: add space between buttons */
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-button {
+  background-color: #333; /* Orange */
+  color: white;
+}
+
+.delete-button {
+  background-color: #ff4500; /* Red */
+  color: white;
+}
+
+/* Add glowing effect for edit and delete buttons on hover */
+.edit-button:hover, .delete-button:hover {
+  box-shadow: 0 0 10px #24c5fb, 0 0 20px #60bdef, 0 0 30px #67cef7; /* Orange glow for edit */
+  transform: scale(1.05);
+  background-color: #3f90d3;
+
+}
+
+.delete-button:hover {
+  box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500; /* Red glow for delete */
+  transform: scale(1.05);
+  background-color: #ea0404ac;
+}
+
+/* Animation for newly added items */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.todo-item {
+  animation: fadeIn 0.5s ease forwards; /* Apply fade-in animation */
+}
+
+
+.footer {
+  position: fixed; /* Fixed at the bottom of the page */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+  background-color: #f1f1f1; /* Background color */
+  text-align: center; /* Center text */
+  padding: 10px; /* Padding */
+  font-size: 14px; /* Font size */
+}
