@@ -9,6 +9,7 @@ Welcome to **LoveToDo**! This is a simple yet powerful Todo List application bui
 - **Responsive Design**: Works beautifully on desktop and mobile devices.
 - **Real-time Updates**: Changes reflect instantly across all devices.
 
+### Hosted Link: https://lovetodo.vercel.app/
 ## 📦 Installation
 
 To get started with LoveToDo, follow these simple steps:
