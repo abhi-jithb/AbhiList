@@ -36,6 +36,7 @@ coverage/
 # Firebase
 firebase-debug.log
 .firebase
+.firebaserc
 # OS-specific files
 Thumbs.db
 ehthumbs.db
