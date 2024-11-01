@@ -1,10 +1,9 @@
 # ✨ LoveToDo ✨
 
 Welcome to **LoveToDo**! This is a simple yet powerful Todo List application built with React and Firebase. Organize your tasks with ease and bring a bit of love into your productivity!
-![LoveToDo Logo](public\assests\LoveToDo-Logo.png)
+![LoveToDo Logo](public\assests\LoveToDO-logo.png)
 ![LoveToDo Screenshot](public\assests\Screenshot.png)
 ## 🌟 Features
-
 - **User Authentication**: Secure sign-in with Firebase authentication.
 - **CRUD Operations**: Create, Read, Update, and Delete your tasks seamlessly.
 - **Responsive Design**: Works beautifully on desktop and mobile devices.
