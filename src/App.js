@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import TodoList from './components/todoList';
 import AuthComponent from './components/AuthComponent';
 import Footer from './components/Footer';
+import UserCount from './components/userCount'; 
+// import ReviewComponent from './components/reviewComponent'; 
 import { auth, db } from './firebaseConfig';
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -65,8 +67,10 @@ function App() {
         <div className="App">
             {user ? (
                 <>
+                    <UserCount /> {/* Display user count */}
+                    {/* <ReviewComponent />  */}
                     <TodoList />
-                    <button onClick={handleLogout} className="logout-button">Log Out</button> {/* Logout button */}
+                    <button onClick={handleLogout} className="logout-button">Log Out</button>
                 </>
             ) : (
                 <AuthComponent />
