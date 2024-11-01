@@ -270,3 +270,19 @@ h2 {
   padding: 10px; /* Padding */
   font-size: 14px; /* Font size */
 }
+
+.logout-button{
+  padding: 10px 15px;
+  background-color: #090808; /* Red background for logout */
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.logout-button:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500; /* Red glow for delete */
+  
+}
